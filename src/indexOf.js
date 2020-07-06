@@ -1,4 +1,4 @@
-'user strict'
+'use strict'
 
 function indexOf (array, element) {
     let find = false;
