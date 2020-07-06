@@ -1,5 +1,3 @@
-const tail = arr => {
-  return arr.length === 0 ? 'Empty array!' : arr[arr.length-1]
+export const tail = arr => {
+  return !arr ? undefined : !arr.length ? undefined : _.tail(arr);
 }
-
-module.exports = tail
