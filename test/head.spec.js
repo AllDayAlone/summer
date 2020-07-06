@@ -8,10 +8,10 @@ function test() {
   assert.equal(head(['lol', 'kek']), 'lol');
 
   // bad arguments
-  assert.equal(head([]), 'Value is not valid');
-  assert.equal(head(null), 'Value is not valid');
-  assert.equal(head('pffff'), 'Value is not valid');
-  assert.equal(head(126), 'Value is not valid');
+  assert.equal(head([]), undefined);
+  assert.equal(head(null), undefined);
+  assert.equal(head('pffff'), undefined);
+  assert.equal(head(126), undefined);
 
   console.log('Success!');
 }
