@@ -1,5 +1,5 @@
 function head(arr) {
-    return arr[0];
+  return Array.isArray(arr) && arr.length>0 ? arr[0] : 'Value is not valid';
   }
-  
+ 
   module.exports = head;
