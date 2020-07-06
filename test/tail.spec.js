@@ -13,7 +13,7 @@ function test() {
   assert.equal(tail(arr3), 500);
 
   // bad arguments
-  assert.equal(tail(arr4), 'Empty array!');
+  assert.equal(tail(arr4), undefined);
 
 }
 
