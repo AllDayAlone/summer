@@ -8,5 +8,4 @@ const times = (randomBool, quantity) => {
     } 
     return result;
 }
-
 const result = times(randomBool, quantity = 5);
