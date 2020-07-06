@@ -7,7 +7,9 @@ function test() {
 
   assert.deepStrictEqual(mapValues(testData, nullifier), { first: 0, second: 0 }, 'prop values should be 0');
 
+  assert.deepStrictEqual(mapValues(null, () => 1), {});
   
-
-
+  console.log('mapValues test passed!');
 }
+
+test();
