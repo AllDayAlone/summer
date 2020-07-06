@@ -3,9 +3,7 @@ const dropRight = (array, n = 1) => {
         return [];
     }
 
-    for (let i = 0; i < n; i += 1) {
-        array.pop();
-    }
+    array.splice(array.length - n, n);
 
     return array;
 }
