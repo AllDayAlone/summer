@@ -2,7 +2,9 @@ function without(arr, ...values) {
     function notExist(value) {
         return ![...values].includes(value);
     }
+    if (!arr.length) return [];
+    if (!values.length) return arr;
     return arr.filter(notExist);
-  }
+}
 
-export default without;
+module.exports = without;
