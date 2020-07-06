@@ -9,8 +9,9 @@ function test() {
   assert.deepStrictEqual(without(array, 1, 2, 3, 4), []);
   // no values
   assert.deepStrictEqual(without(array), array);
-  // empty array
+  // empty array or null
   assert.deepStrictEqual(without([], 1, 2, 3), []);
+  assert.deepStrictEqual(without(null, 1, 2, 3), []);
 
   console.log('Success!');
 }
