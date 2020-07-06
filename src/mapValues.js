@@ -1,7 +1,7 @@
 const mapValues = (obj, func) => {
-  if (typeof obj !== 'object') return obj;
+  const object = Object(obj);
 
-  const entries = Object.entries(obj);
+  const entries = Object.entries(object);
   const res = entries.reduce((acc, cur) => {
     const [prop, val] = cur;
     return { ...acc, [prop]: func(val) };
