@@ -1,8 +1,4 @@
 const arr = [1, 2, 3, 4, 5];
-let mass;
-tail=(arr)=>{
-arr.shift()
-return arr
-}
-const result = tail(arr);
-console.log(result)
+console.log((arr=>{
+    return arr.slice(1)
+})(arr))
