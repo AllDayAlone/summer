@@ -1,1 +1,1 @@
-git@github.com:ZZireal/summer.git
+https://github.com/ZZireal/github.git
