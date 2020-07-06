@@ -5,7 +5,6 @@ function myMapArray(obj, f) {
 }
 
 function myMapObject(obj, f) {
-    let o = {};
     let arr = [];
     for (let key in obj) {
         if(obj.hasOwnProperty(key))
