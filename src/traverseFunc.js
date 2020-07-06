@@ -1,16 +1,18 @@
-var _ = require('lodash');
+const forIn = require('lodash/forIn');
+const isObject = require('lodash/isObject');
 
-export const traverse = (obj, func) => {
-    _.forIn(obj, (val, key) => {
+
+const traverse = (obj, func) => {
+    forIn(obj, (val, key) => {
         obj[key] = func(val);
         if (Array.isArray(val)) {
             val.forEach(function(el) {
-                if (_.isObject(el)) {
+                if (isObject(el)) {
                     traverse(el, func);
                 }
             });
         }
-        if (_.isObject(key)) {
+        if (isObject(key)) {
             traverse(obj[key], func);
         }
     });
