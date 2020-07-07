@@ -1,1 +1,0 @@
-const drop=(arr, index)=> arr.filter((item, i)=>i+1>index)
